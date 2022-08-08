@@ -4,6 +4,8 @@ import java.util.Scanner;
 public class DifficultyEntry {
 
 	public void PickDifficulty(Scanner sc) {
+		System.out.println("Enter your name:");
+		name = sc.nextLine();
 		try {
 		while (check) {
 
@@ -30,11 +32,12 @@ public class DifficultyEntry {
 			numberOfWords = 8;
 			numberOfChances = 15;
 		}
-
+		
 	}
 
 	int pick;
 	int numberOfWords;
 	int numberOfChances;
 	boolean check = true;
+	String name;
 }
